@@ -35,19 +35,43 @@ body{
     box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
     position: relative;
 }
-.img{
+.caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: green;
+}
+.img, .img2, .img3{
     background-color: red;
     position: absolute;
     top: 0;
     left: 0;
     height: 80%;
     width: 100%;
+    background: url(vv.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img2{
+    background: url(green.jpg); 
 }
 @media(max-width: 786px){
     .myContainer{
         height: 100vh;
     }
     .img{
-        height: 80%;
+    background: url(vv.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 90%;
+    }
+    .grid{
+        height: 300px;
+    }
+    .nested-grid{
+        width: 90%;
     }
 }
