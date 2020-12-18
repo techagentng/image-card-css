@@ -1,0 +1,50 @@
+:root{
+    --primary-color: rgba(13, 110, 139, 0.75); /* last value makes it transparent*/
+    --overlay-color:    rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;    
+    background-color: #2e8e86;
+}
+.myContainer{
+    background-color: #fff;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin: auto;
+}
+.nested-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2em;
+    padding: 5px;
+    border: 1px solid black;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+}
+.grid{
+    padding: 2em;
+    border-radius: .3rem;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+}
+.img{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+}
+@media(max-width: 786px){
+    .myContainer{
+        height: 100vh;
+    }
+}
